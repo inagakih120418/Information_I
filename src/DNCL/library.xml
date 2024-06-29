@@ -1,0 +1,541 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><block type="factory_base" id="G},T0M5i%mv:EdGYOu6Y" deletable="false" movable="false" x="10" y="10">
+    <mutation connections="BOTH"></mutation>
+    <field name="NAME">drawer_init</field>
+    <field name="INLINE">INT</field>
+    <field name="CONNECTIONS">BOTH</field>
+    <statement name="INPUTS">
+      <block type="input_dummy" id="Vt3UbB1dxloUTvdg3J`6">
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="GkIWYS,k=BWTUKpIenF}">
+            <field name="TEXT">初期化</field>
+          </block>
+        </statement>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="hwYw?Q-+UUi+6n+Dqju#" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="V2:2vS3fBV*,ggKLU+*x" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="TOPTYPE">
+      <shadow type="type_null" id="K8fy(N2U`a}Ja[*W{;/3"></shadow>
+    </value>
+    <value name="BOTTOMTYPE">
+      <shadow type="type_null" id=")EWieY?0_?jQE?Ux{H6A"></shadow>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="^Oh%qz5RlJLS#oI9!Q8O">
+        <mutation colour="#9fa55b"></mutation>
+        <field name="HUE">65</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id=",cce-7l1EWeBg4Asa%3h" deletable="false" movable="false" x="10" y="10">
+    <mutation connections="BOTTOM"></mutation>
+    <field name="NAME">drawer_start</field>
+    <field name="INLINE">AUTO</field>
+    <field name="CONNECTIONS">BOTTOM</field>
+    <statement name="INPUTS">
+      <block type="input_dummy" id="8r)8+3HOMAn~iG5tWAN,">
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="XSGVQ075R=Ds@DJ#IOmb">
+            <field name="TEXT">描画</field>
+          </block>
+        </statement>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="wPX2ZMw-2SO(D})mwm`o" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="?p[](+JsxFOkB`?Wd_J|" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="BOTTOMTYPE">
+      <shadow type="type_null" id="e.T?7]FB|7NY`7F8xX-?"></shadow>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="!!P)GO}kU_l7)W.`:sN4">
+        <mutation colour="#a5745b"></mutation>
+        <field name="HUE">20</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="G},T0M5i%mv:EdGYOu6Y" deletable="false" movable="false" x="10" y="10">
+    <mutation connections="BOTH"></mutation>
+    <field name="NAME">drawer_color</field>
+    <field name="INLINE">INT</field>
+    <field name="CONNECTIONS">BOTH</field>
+    <statement name="INPUTS">
+      <block type="input_dummy" id="Vt3UbB1dxloUTvdg3J`6">
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_image" id="ia]pg4DCs:$mOp0;[WZk">
+            <field name="SRC">./icons/color.png</field>
+            <field name="WIDTH">20</field>
+            <field name="HEIGHT">20</field>
+            <field name="ALT">*</field>
+            <field name="FLIP_RTL">FALSE</field>
+            <next>
+              <block type="field_colour" id="gP]i)Z[=k-W%H@C:Eh^m">
+                <field name="COLOUR">#000000</field>
+                <field name="FIELDNAME">COLOR</field>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="hwYw?Q-+UUi+6n+Dqju#" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="V2:2vS3fBV*,ggKLU+*x" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="TOPTYPE">
+      <shadow type="type_null" id="K8fy(N2U`a}Ja[*W{;/3"></shadow>
+    </value>
+    <value name="BOTTOMTYPE">
+      <shadow type="type_null" id=")EWieY?0_?jQE?Ux{H6A"></shadow>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="zFBMo;{q^2[uw`k$f}5?">
+        <mutation colour="#5ba55b"></mutation>
+        <field name="HUE">120</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="G},T0M5i%mv:EdGYOu6Y" deletable="false" movable="false" x="10" y="10">
+    <mutation connections="BOTH"></mutation>
+    <field name="NAME">drawer_font</field>
+    <field name="INLINE">INT</field>
+    <field name="CONNECTIONS">BOTH</field>
+    <statement name="INPUTS">
+      <block type="input_dummy" id="Vt3UbB1dxloUTvdg3J`6">
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_image" id="ia]pg4DCs:$mOp0;[WZk">
+            <field name="SRC">./icons/font.png</field>
+            <field name="WIDTH">20</field>
+            <field name="HEIGHT">20</field>
+            <field name="ALT">*</field>
+            <field name="FLIP_RTL">FALSE</field>
+            <next>
+              <block type="field_number" id="p|fQulRybtj_JCC@35A-">
+                <field name="VALUE">11</field>
+                <field name="FIELDNAME">SIZE</field>
+                <field name="MIN">5</field>
+                <field name="MAX">100</field>
+                <field name="PRECISION">0</field>
+                <next>
+                  <block type="field_dropdown" id="AMrvUiP+A47w};%R`{_n">
+                    <mutation options="[&quot;text&quot;,&quot;text&quot;,&quot;text&quot;,&quot;text&quot;]"></mutation>
+                    <field name="FIELDNAME">FONT</field>
+                    <field name="USER0">Arial</field>
+                    <field name="CPU0">Arial</field>
+                    <field name="USER1">serif</field>
+                    <field name="CPU1">serif</field>
+                    <field name="USER2">sans-serif</field>
+                    <field name="CPU2">sans-serif</field>
+                    <field name="USER3">monospace</field>
+                    <field name="CPU3">monospace</field>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="hwYw?Q-+UUi+6n+Dqju#" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="V2:2vS3fBV*,ggKLU+*x" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="TOPTYPE">
+      <shadow type="type_null" id="K8fy(N2U`a}Ja[*W{;/3"></shadow>
+    </value>
+    <value name="BOTTOMTYPE">
+      <shadow type="type_null" id=")EWieY?0_?jQE?Ux{H6A"></shadow>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="BJA4kNbYr;#ShaIk4+gl">
+        <mutation colour="#5ba58c"></mutation>
+        <field name="HUE">160</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="G},T0M5i%mv:EdGYOu6Y" deletable="false" movable="false" x="10" y="10">
+    <mutation connections="BOTH"></mutation>
+    <field name="NAME">drawer_line</field>
+    <field name="INLINE">INT</field>
+    <field name="CONNECTIONS">BOTH</field>
+    <statement name="INPUTS">
+      <block type="input_dummy" id="Vt3UbB1dxloUTvdg3J`6">
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_image" id="ia]pg4DCs:$mOp0;[WZk">
+            <field name="SRC">./icons/line.png</field>
+            <field name="WIDTH">20</field>
+            <field name="HEIGHT">20</field>
+            <field name="ALT">*</field>
+            <field name="FLIP_RTL">FALSE</field>
+            <next>
+              <block type="field_input" id="zOc[MW5f=4Vfo.GvYMB+">
+                <field name="TEXT">0,0,50,50</field>
+                <field name="FIELDNAME">POINTS</field>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="hwYw?Q-+UUi+6n+Dqju#" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="V2:2vS3fBV*,ggKLU+*x" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="TOPTYPE">
+      <shadow type="type_null" id="K8fy(N2U`a}Ja[*W{;/3"></shadow>
+    </value>
+    <value name="BOTTOMTYPE">
+      <shadow type="type_null" id=")EWieY?0_?jQE?Ux{H6A"></shadow>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="=UL8Od{r=+*4oPHH]$/2">
+        <mutation colour="#5b80a5"></mutation>
+        <field name="HUE">210</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="G},T0M5i%mv:EdGYOu6Y" deletable="false" movable="false" x="10" y="10">
+    <mutation connections="BOTH"></mutation>
+    <field name="NAME">drawer_oval</field>
+    <field name="INLINE">INT</field>
+    <field name="CONNECTIONS">BOTH</field>
+    <statement name="INPUTS">
+      <block type="input_dummy" id="Vt3UbB1dxloUTvdg3J`6">
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_image" id="ia]pg4DCs:$mOp0;[WZk">
+            <field name="SRC">./icons/oval.png</field>
+            <field name="WIDTH">20</field>
+            <field name="HEIGHT">20</field>
+            <field name="ALT">*</field>
+            <field name="FLIP_RTL">FALSE</field>
+            <next>
+              <block type="field_static" id="v,Z3lRj20Vdz0^Jx[D@4">
+                <field name="TEXT">x</field>
+                <next>
+                  <block type="field_number" id="x#?P~h?56QcAYM_;gM#.">
+                    <field name="VALUE">0</field>
+                    <field name="FIELDNAME">X</field>
+                    <field name="MIN">0</field>
+                    <field name="MAX">200</field>
+                    <field name="PRECISION">0</field>
+                    <next>
+                      <block type="field_static" id="klmiOj9u{{@nWdoElF_*">
+                        <field name="TEXT">y</field>
+                        <next>
+                          <block type="field_number" id="=|gDK9^jOFk:-b)dqwJA">
+                            <field name="VALUE">0</field>
+                            <field name="FIELDNAME">Y</field>
+                            <field name="MIN">0</field>
+                            <field name="MAX">200</field>
+                            <field name="PRECISION">0</field>
+                            <next>
+                              <block type="field_static" id="Wd95I9y:pdTd/KPENz,J">
+                                <field name="TEXT">横半径</field>
+                                <next>
+                                  <block type="field_number" id="NCH;?|:%uK[}$i)B,L}(">
+                                    <field name="VALUE">50</field>
+                                    <field name="FIELDNAME">XRADIUS</field>
+                                    <field name="MIN">1</field>
+                                    <field name="MAX">200</field>
+                                    <field name="PRECISION">0</field>
+                                    <next>
+                                      <block type="field_static" id="b$I)4~s`rKOgm7:I,QO:">
+                                        <field name="TEXT">縦半径</field>
+                                        <next>
+                                          <block type="field_number" id="4Bv|u`nC?xLbZ5.ppTGf">
+                                            <field name="VALUE">50</field>
+                                            <field name="FIELDNAME">YRADIUS</field>
+                                            <field name="MIN">1</field>
+                                            <field name="MAX">200</field>
+                                            <field name="PRECISION">0</field>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="hwYw?Q-+UUi+6n+Dqju#" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="V2:2vS3fBV*,ggKLU+*x" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="TOPTYPE">
+      <shadow type="type_null" id="K8fy(N2U`a}Ja[*W{;/3"></shadow>
+    </value>
+    <value name="BOTTOMTYPE">
+      <shadow type="type_null" id=")EWieY?0_?jQE?Ux{H6A"></shadow>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="J$|-.QTc)Yox~E^aXN5.">
+        <mutation colour="#745ba5"></mutation>
+        <field name="HUE">260</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="G},T0M5i%mv:EdGYOu6Y" deletable="false" movable="false" x="10" y="10">
+    <mutation connections="BOTH"></mutation>
+    <field name="NAME">drawer_area</field>
+    <field name="INLINE">INT</field>
+    <field name="CONNECTIONS">BOTH</field>
+    <statement name="INPUTS">
+      <block type="input_dummy" id="Vt3UbB1dxloUTvdg3J`6">
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_image" id="ia]pg4DCs:$mOp0;[WZk">
+            <field name="SRC">./icons/area.png</field>
+            <field name="WIDTH">20</field>
+            <field name="HEIGHT">20</field>
+            <field name="ALT">*</field>
+            <field name="FLIP_RTL">FALSE</field>
+            <next>
+              <block type="field_input" id="[5@wSr4:VdZBePYTCA(6">
+                <field name="TEXT">0,0,50,50</field>
+                <field name="FIELDNAME">POINTS</field>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="hwYw?Q-+UUi+6n+Dqju#" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="V2:2vS3fBV*,ggKLU+*x" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="TOPTYPE">
+      <shadow type="type_null" id="K8fy(N2U`a}Ja[*W{;/3"></shadow>
+    </value>
+    <value name="BOTTOMTYPE">
+      <shadow type="type_null" id=")EWieY?0_?jQE?Ux{H6A"></shadow>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="Cz|QI^FI9A$]R0lf^3S]">
+        <mutation colour="#5b67a5"></mutation>
+        <field name="HUE">230</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="G},T0M5i%mv:EdGYOu6Y" deletable="false" movable="false" x="10" y="10">
+    <mutation connections="BOTH"></mutation>
+    <field name="NAME">drawer_rect</field>
+    <field name="INLINE">INT</field>
+    <field name="CONNECTIONS">BOTH</field>
+    <statement name="INPUTS">
+      <block type="input_dummy" id="Vt3UbB1dxloUTvdg3J`6">
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_image" id="ia]pg4DCs:$mOp0;[WZk">
+            <field name="SRC">./icons/rect.png</field>
+            <field name="WIDTH">20</field>
+            <field name="HEIGHT">20</field>
+            <field name="ALT">*</field>
+            <field name="FLIP_RTL">FALSE</field>
+            <next>
+              <block type="field_static" id="v,Z3lRj20Vdz0^Jx[D@4">
+                <field name="TEXT">x</field>
+                <next>
+                  <block type="field_number" id="x#?P~h?56QcAYM_;gM#.">
+                    <field name="VALUE">0</field>
+                    <field name="FIELDNAME">X</field>
+                    <field name="MIN">0</field>
+                    <field name="MAX">200</field>
+                    <field name="PRECISION">0</field>
+                    <next>
+                      <block type="field_static" id="klmiOj9u{{@nWdoElF_*">
+                        <field name="TEXT">y</field>
+                        <next>
+                          <block type="field_number" id="=|gDK9^jOFk:-b)dqwJA">
+                            <field name="VALUE">0</field>
+                            <field name="FIELDNAME">Y</field>
+                            <field name="MIN">0</field>
+                            <field name="MAX">200</field>
+                            <field name="PRECISION">0</field>
+                            <next>
+                              <block type="field_static" id="qs6j04K3G.t0s1lQNYi+">
+                                <field name="TEXT">幅</field>
+                                <next>
+                                  <block type="field_number" id="nBeJKItUH{0oa:LWLN%Y">
+                                    <field name="VALUE">50</field>
+                                    <field name="FIELDNAME">WIDTH</field>
+                                    <field name="MIN">1</field>
+                                    <field name="MAX">200</field>
+                                    <field name="PRECISION">0</field>
+                                    <next>
+                                      <block type="field_static" id="/G]qrl5fwfY6F8VY37Z=">
+                                        <field name="TEXT">高</field>
+                                        <next>
+                                          <block type="field_number" id="1dzrSG3J7oIvdrVv8LCO">
+                                            <field name="VALUE">50</field>
+                                            <field name="FIELDNAME">HEIGHT</field>
+                                            <field name="MIN">1</field>
+                                            <field name="MAX">200</field>
+                                            <field name="PRECISION">0</field>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="hwYw?Q-+UUi+6n+Dqju#" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="V2:2vS3fBV*,ggKLU+*x" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="TOPTYPE">
+      <shadow type="type_null" id="K8fy(N2U`a}Ja[*W{;/3"></shadow>
+    </value>
+    <value name="BOTTOMTYPE">
+      <shadow type="type_null" id=")EWieY?0_?jQE?Ux{H6A"></shadow>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="=p]6o8~EbCtukYl^#X1q">
+        <mutation colour="#995ba5"></mutation>
+        <field name="HUE">290</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="G},T0M5i%mv:EdGYOu6Y" deletable="false" movable="false" x="10" y="10">
+    <mutation connections="BOTH"></mutation>
+    <field name="NAME">drawer_text</field>
+    <field name="INLINE">INT</field>
+    <field name="CONNECTIONS">BOTH</field>
+    <statement name="INPUTS">
+      <block type="input_dummy" id="Vt3UbB1dxloUTvdg3J`6">
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_image" id="ia]pg4DCs:$mOp0;[WZk">
+            <field name="SRC">./icons/text.png</field>
+            <field name="WIDTH">20</field>
+            <field name="HEIGHT">20</field>
+            <field name="ALT">*</field>
+            <field name="FLIP_RTL">FALSE</field>
+            <next>
+              <block type="field_number" id="-3Szuz/G{CrW84e6Bd(^">
+                <field name="VALUE">0</field>
+                <field name="FIELDNAME">X</field>
+                <field name="MIN">0</field>
+                <field name="MAX">200</field>
+                <field name="PRECISION">0</field>
+                <next>
+                  <block type="field_static" id="%GVJ(R3rac8wD,h_[q(c">
+                    <field name="TEXT">y</field>
+                    <next>
+                      <block type="field_number" id="KC_sX)fFiYQv)E*HHqyF">
+                        <field name="VALUE">0</field>
+                        <field name="FIELDNAME">Y</field>
+                        <field name="MIN">0</field>
+                        <field name="MAX">200</field>
+                        <field name="PRECISION">0</field>
+                        <next>
+                          <block type="field_input" id="%eI!,jb]8Bw3#tP}^Yam">
+                            <field name="TEXT">テキスト</field>
+                            <field name="FIELDNAME">TEXT</field>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="hwYw?Q-+UUi+6n+Dqju#" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="V2:2vS3fBV*,ggKLU+*x" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="TOPTYPE">
+      <shadow type="type_null" id="K8fy(N2U`a}Ja[*W{;/3"></shadow>
+    </value>
+    <value name="BOTTOMTYPE">
+      <shadow type="type_null" id=")EWieY?0_?jQE?Ux{H6A"></shadow>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="z9c3[x/ew62=EA.^vJzk">
+        <mutation colour="#a55b80"></mutation>
+        <field name="HUE">330</field>
+      </block>
+    </value>
+  </block></xml>

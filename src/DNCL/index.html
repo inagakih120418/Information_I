@@ -1,42 +1,33 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DNCL Block Programming</title>
-  <link rel="stylesheet" href="styles.css">
-  <!-- Blocklyの必要なスクリプトを追加 -->
-  <script src="https://cdn.jsdelivr.net/npm/blockly@10.1.2/blockly_compressed.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/blockly@10.1.2/blocks_compressed.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/blockly@10.1.2/javascript_compressed.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/blockly@10.1.2/msg/ja.js"></script>
-  <script src="app_core.js"></script>
-  <script src="custom_blocks.js"></script>
+    <meta charset="utf-8">
+    <title>Blocklyを使ったお絵描きアプリ</title>
+    <!-- BlocklyのライブラリはCDNに登録されているものを利用 -->
+    <script src="https://cdn.jsdelivr.net/npm/blockly@10.1.2/blockly_compressed.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/blockly@10.1.2/blocks_compressed.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/blockly@10.1.2/javascript_compressed.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/blockly@10.1.2/msg/en.js"></script>
+    <!-- 以下のスクリプトでお絵描きアプリ環境を構築 -->
+    <script src="./custom_blocks.js"></script>
+    <script src="./startup_blocks.js"></script>
+    <script src="./tool_box.js"></script>
+    <script src="./generator.js"></script>
+    <script src="./canvas_drawer.js"></script>
+    <script src="./app_core.js"></script>
 </head>
 <body>
-  <div class="container">
-    <div id="blocklyDiv" class="blockly-area"></div>
-    <div class="output-area">
-      <button onclick="runCode()">コードを実行</button>
-      <pre id="output"></pre>
+    <div>Blocklyを使ったお絵描きアプリ <a href="https://blockly-demo.appspot.com/static/demos/blockfactory/index.html">[カスタムブロック作成ツール]</a> <a href="https://developer.mozilla.org/ja/docs/Web/API/CanvasRenderingContext2D">[CanvasRenderingContext2D API]</a></div>
+
+    <div id="blocklyDiv" style="width:950px; height:750px; position:relative;">
+        <canvas id="drawer-canvas" width="200" height="200" style="border:10px ridge #008000; position:absolute;top:0px;left:960px;"></canvas>
+        <div style="width:200px; position:absolute;top:0px;left:1200px;">
+            <button id="button0">スタートアップブロック生成</button>
+            <div>
+            スタートアップブロック生成で生成されたjsonをstartup_blocks.jsに記述するとスタートアップ時の初期ブロック配置になります。
+            </div>
+        </div>
+        <textarea id="output" placeholder="生成コード" rows="40" cols="55" style="position:absolute;top:230px;left:960px;" readonly></textarea>
     </div>
-  </div>
-  <xml id="toolbox" style="display: none">
-    <category name="制御">
-      <block type="controls_if"></block>
-    </category>
-    <category name="論理">
-      <block type="logic_compare"></block>
-    </category>
-    <category name="数学">
-      <block type="math_number"></block>
-      <block type="math_arithmetic"></block>
-    </category>
-    <category name="テキスト">
-      <block type="text"></block>
-      <block type="text_print"></block>
-      <block type="print"></block> <!-- 日本語のブロックを追加 -->
-    </category>
-  </xml>
 </body>
 </html>
