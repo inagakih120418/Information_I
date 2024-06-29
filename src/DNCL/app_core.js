@@ -19,6 +19,10 @@ var workspace = Blockly.inject('blocklyDiv', {
     }
   });
   
+  // 初期ブロック配置
+  var workspaceBlocks = Blockly.Xml.textToDom('<xml xmlns="https://developers.google.com/blockly/xml"></xml>');
+  Blockly.Xml.domToWorkspace(workspaceBlocks, workspace);
+  
   // ユーザーが作成したコードを実行
   function runCode() {
     var code = Blockly.JavaScript.workspaceToCode(workspace);
@@ -33,8 +37,4 @@ var workspace = Blockly.inject('blocklyDiv', {
       alert(e);
     }
   }
-  
-  // 初期ブロック配置
-  var workspaceBlocks = Blockly.Xml.textToDom('<xml xmlns="https://developers.google.com/blockly/xml"></xml>');
-  Blockly.Xml.domToWorkspace(workspaceBlocks, workspace);
   

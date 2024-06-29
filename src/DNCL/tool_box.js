@@ -1,37 +1,34 @@
-const toolbox = {
-    "kind": "flyoutToolbox",
-    "contents": [
-      {
-        "kind": "block",
-        "type": "drawer_init",
-      },
-      {
-        "kind": "block",
-        "type": "drawer_color",
-      },
-      {
-        "kind": "block",
-        "type": "drawer_line",
-      },
-      {
-        "kind": "block",
-        "type": "drawer_area",
-      },
-      {
-        "kind": "block",
-        "type": "drawer_rect",
-      },
-      {
-        "kind": "block",
-        "type": "drawer_oval",
-      },
-      {
-        "kind": "block",
-        "type": "drawer_font",
-      },
-      {
-        "kind": "block",
-        "type": "drawer_text",
-      },
-    ]
+// ツールボックスの定義
+var toolbox = {
+  "kind": "flyoutToolbox",
+  "contents": [
+    {
+      "kind": "block",
+      "type": "controls_if"
+    },
+    {
+      "kind": "block",
+      "type": "logic_compare"
+    },
+    {
+      "kind": "block",
+      "type": "math_number"
+    },
+    {
+      "kind": "block",
+      "type": "math_arithmetic"
+    },
+    {
+      "kind": "block",
+      "type": "text"
+    },
+    {
+      "kind": "block",
+      "type": "text_print"
+    },
+    {
+      "kind": "block",
+      "type": "print"
+    }
+  ]
 };
