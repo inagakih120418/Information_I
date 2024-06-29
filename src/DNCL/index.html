@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DNCL Block Programming</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div id="blocklyDiv" style="height: 480px; width: 600px;"></div>
+    <button onclick="runCode()">コードを実行</button>
+
+    <!-- Blocklyのライブラリ -->
+    <script src="https://unpkg.com/blockly/blockly.min.js"></script>
+
+    <!-- ツールボックスのXML定義 -->
+    <xml id="toolbox" style="display: none">
+        <block type="controls_if"></block>
+        <block type="logic_compare"></block>
+        <block type="math_number"></block>
+        <block type="math_arithmetic"></block>
+        <block type="text"></block>
+        <block type="text_print"></block>
+        <block type="print"></block> <!-- 日本語のブロックを追加 -->
+    </xml>
+
+    <!-- カスタムブロックと実行コードのJavaScript -->
+    <script>
+        // Blocklyの初期化
+        var workspace = Blockly.inject('blocklyDiv', {
+            toolbox: document.getElementById('toolbox')
+        });
+
+        // ユーザーが作成したコードを実行
+        function runCode() {
+            var code = Blockly.JavaScript.workspaceToCode(workspace);
+            try {
+                eval(code);
+            } catch (e) {
+                alert(e);
+            }
+        }
+
+        // 日本語ブロックの定義
+        Blockly.Blocks['print'] = {
+            init: function() {
+                this.appendValueInput("TEXT")
+                    .setCheck("String")
+                    .appendField("表示する");
+                this.setPreviousStatement(true, null);
+                this.setNextStatement(true, null);
+                this.setColour(160);
+                this.setTooltip("テキストを表示します");
+                this.setHelpUrl("");
+            }
+        };
+
+        Blockly.JavaScript['print'] = function(block) {
+            var value_text = Blockly.JavaScript.valueToCode(block, 'TEXT', Blockly.JavaScript.ORDER_ATOMIC);
+            var code = 'console.log(' + value_text + ');\n';
+            return code;
+        };
+    </script>
+</body>
+</html>

@@ -100,3 +100,8 @@ footer {
         width: 100%;
     }
 }
+
+#blocklyDiv {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
