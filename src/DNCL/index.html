@@ -7,8 +7,13 @@
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-    <div id="blocklyDiv" style="height: 480px; width: 600px;"></div>
-    <button onclick="runCode()">コードを実行</button>
+    <div class="container">
+        <div id="blocklyDiv" class="blockly-area"></div>
+        <div class="output-area">
+            <button onclick="runCode()">コードを実行</button>
+            <pre id="output"></pre>
+        </div>
+    </div>
 
     <!-- Blocklyのライブラリ -->
     <script src="https://unpkg.com/blockly/blockly.min.js"></script>
@@ -35,6 +40,11 @@
         function runCode() {
             var code = Blockly.JavaScript.workspaceToCode(workspace);
             try {
+                var outputArea = document.getElementById('output');
+                outputArea.textContent = '';
+                console['log'] = function(message) {
+                    outputArea.textContent += message + '\n';
+                };
                 eval(code);
             } catch (e) {
                 alert(e);
