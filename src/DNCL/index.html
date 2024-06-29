@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DNCL Block Programming</title>
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
@@ -33,7 +33,23 @@
     <script>
         // Blocklyの初期化
         var workspace = Blockly.inject('blocklyDiv', {
-            toolbox: document.getElementById('toolbox')
+            toolbox: document.getElementById('toolbox'),
+            grid: {
+                spacing: 20,
+                length: 3,
+                colour: '#ccc',
+                snap: true
+            },
+            trashcan: true,
+            scrollbars: true,
+            zoom: {
+                controls: true,
+                wheel: true,
+                startScale: 1.0,
+                maxScale: 3,
+                minScale: 0.3,
+                scaleSpeed: 1.2
+            }
         });
 
         // ユーザーが作成したコードを実行
