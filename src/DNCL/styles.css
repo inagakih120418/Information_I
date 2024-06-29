@@ -19,7 +19,7 @@ body {
     flex: 1;
     height: 100%;
     border: 1px solid #ccc;
-    overflow: hidden;
+    position: relative;
 }
 
 .output-area {
