@@ -1,96 +1,33 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DNCL Block Programming</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DNCL Block Programming</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/blockly/blockly.min.js"></script>
+  <script src="app_core.js"></script>
+  <script src="tool_box.js"></script>
+  <script src="startup_blocks.js"></script>
+  <script src="custom_blocks.js"></script>
+  <script src="generator.js"></script>
 </head>
 <body>
-    <div class="container">
-        <div id="blocklyDiv" class="blockly-area"></div>
-        <div class="output-area">
-            <button onclick="runCode()">コードを実行</button>
-            <pre id="output"></pre>
-        </div>
+  <div class="container">
+    <div id="blocklyDiv" class="blockly-area"></div>
+    <div class="output-area">
+      <button onclick="runCode()">コードを実行</button>
+      <pre id="output"></pre>
     </div>
-
-    <!-- Blocklyのライブラリ -->
-    <script src="https://unpkg.com/blockly/blockly.min.js"></script>
-
-    <!-- ツールボックスのXML定義 -->
-    <xml id="toolbox" style="display: none">
-        <block type="controls_if"></block>
-        <block type="logic_compare"></block>
-        <block type="math_number"></block>
-        <block type="math_arithmetic"></block>
-        <block type="text"></block>
-        <block type="text_print"></block>
-        <block type="print"></block> <!-- 日本語のブロックを追加 -->
-    </xml>
-
-    <!-- カスタムブロックと実行コードのJavaScript -->
-    <script>
-        // Blocklyの初期化
-        var workspace = Blockly.inject('blocklyDiv', {
-            toolbox: document.getElementById('toolbox'),
-            grid: {
-                spacing: 20,
-                length: 3,
-                colour: '#ccc',
-                snap: true
-            },
-            trashcan: true,
-            scrollbars: true,
-            zoom: {
-                controls: true,
-                wheel: true,
-                startScale: 1.0,
-                maxScale: 3,
-                minScale: 0.3,
-                scaleSpeed: 1.2
-            }
-        });
-
-        // 初期ブロック配置
-        var toolbox = document.getElementById('toolbox');
-        var workspaceBlocks = Blockly.Xml.textToDom('<xml xmlns="https://developers.google.com/blockly/xml"></xml>');
-        Blockly.Xml.domToWorkspace(workspaceBlocks, workspace);
-
-        // ユーザーが作成したコードを実行
-        function runCode() {
-            var code = Blockly.JavaScript.workspaceToCode(workspace);
-            try {
-                var outputArea = document.getElementById('output');
-                outputArea.textContent = '';
-                console['log'] = function(message) {
-                    outputArea.textContent += message + '\n';
-                };
-                eval(code);
-            } catch (e) {
-                alert(e);
-            }
-        }
-
-        // 日本語ブロックの定義
-        Blockly.Blocks['print'] = {
-            init: function() {
-                this.appendValueInput("TEXT")
-                    .setCheck("String")
-                    .appendField("表示する");
-                this.setPreviousStatement(true, null);
-                this.setNextStatement(true, null);
-                this.setColour(160);
-                this.setTooltip("テキストを表示します");
-                this.setHelpUrl("");
-            }
-        };
-
-        Blockly.JavaScript['print'] = function(block) {
-            var value_text = Blockly.JavaScript.valueToCode(block, 'TEXT', Blockly.JavaScript.ORDER_ATOMIC);
-            var code = 'console.log(' + value_text + ');\n';
-            return code;
-        };
-    </script>
+  </div>
+  <xml id="toolbox" style="display: none">
+    <block type="controls_if"></block>
+    <block type="logic_compare"></block>
+    <block type="math_number"></block>
+    <block type="math_arithmetic"></block>
+    <block type="text"></block>
+    <block type="text_print"></block>
+    <block type="print"></block> <!-- 日本語のブロックを追加 -->
+  </xml>
 </body>
 </html>
