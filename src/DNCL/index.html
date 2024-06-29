@@ -52,6 +52,9 @@
             }
         });
 
+        // 初期ブロック配置
+        Blockly.Xml.domToWorkspace(document.getElementById('toolbox'), workspace);
+
         // ユーザーが作成したコードを実行
         function runCode() {
             var code = Blockly.JavaScript.workspaceToCode(workspace);
