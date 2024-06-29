@@ -5,12 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DNCL Block Programming</title>
   <link rel="stylesheet" href="styles.css">
-  <script src="https://unpkg.com/blockly/blockly.min.js"></script>
+  <!-- Blocklyの必要なスクリプトを追加 -->
+  <script src="https://cdn.jsdelivr.net/npm/blockly@10.1.2/blockly_compressed.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/blockly@10.1.2/blocks_compressed.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/blockly@10.1.2/javascript_compressed.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/blockly@10.1.2/msg/ja.js"></script>
   <script src="app_core.js"></script>
-  <script src="tool_box.js"></script>
-  <script src="startup_blocks.js"></script>
   <script src="custom_blocks.js"></script>
-  <script src="generator.js"></script>
 </head>
 <body>
   <div class="container">
@@ -21,13 +22,21 @@
     </div>
   </div>
   <xml id="toolbox" style="display: none">
-    <block type="controls_if"></block>
-    <block type="logic_compare"></block>
-    <block type="math_number"></block>
-    <block type="math_arithmetic"></block>
-    <block type="text"></block>
-    <block type="text_print"></block>
-    <block type="print"></block> <!-- 日本語のブロックを追加 -->
+    <category name="制御">
+      <block type="controls_if"></block>
+    </category>
+    <category name="論理">
+      <block type="logic_compare"></block>
+    </category>
+    <category name="数学">
+      <block type="math_number"></block>
+      <block type="math_arithmetic"></block>
+    </category>
+    <category name="テキスト">
+      <block type="text"></block>
+      <block type="text_print"></block>
+      <block type="print"></block> <!-- 日本語のブロックを追加 -->
+    </category>
   </xml>
 </body>
 </html>
