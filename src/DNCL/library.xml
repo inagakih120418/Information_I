@@ -8,7 +8,7 @@
         <field name="ALIGN">LEFT</field>
         <statement name="FIELDS">
           <block type="field_static" id="GkIWYS,k=BWTUKpIenF}">
-            <field name="TEXT">初期化</field>
+            <field name="TEXT">初期化test</field>
           </block>
         </statement>
       </block>
