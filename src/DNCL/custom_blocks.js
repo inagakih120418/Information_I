@@ -1,7 +1,7 @@
 const custom_blocks =
 [{
   "type": "drawer_init",
-  "message0": "初期化",
+  "message0": "初期化test",
   "inputsInline": true,
   "previousStatement": null,
   "nextStatement": null,
